@@ -17,7 +17,7 @@ fi
 VOLUME_SIZE=${EBS_VOLUME_SIZE%?}
 VOLUME_TYPE=${EBS_VOLUME_TYPE:-gp2}
 VOLUME_IOPS=${EBS_VOLUME_IOPS}
-VOLUME_DIR=${VOLUME_DIR:-/ebs/$VOLUME_NAME}
+VOLUME_DIR=${EBS_VOLUME_DIR:-/ebs/$VOLUME_NAME}
 
 # TODO: support volume resizing,
 #       migrating between AZ,
